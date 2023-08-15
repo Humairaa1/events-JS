@@ -25,11 +25,11 @@
         //step:1 add event listener to the post button
         document.getElementById('post-btn').addEventListener('click',function(){
             
-            //step :2
+            //step :2 get the comment inside the text area
             const commentBox = document.getElementById('comment');
             const newComment = commentBox.value;
 
-            //step:3
+            //step:3 set the comment inside the comment container
             const commentContainer = document.getElementById('comment-container');
             const p = document.createElement('p');
             p.innerText =newComment;
